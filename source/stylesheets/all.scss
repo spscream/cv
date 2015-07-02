@@ -1,0 +1,115 @@
+
+@import "materialize";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 3rem;
+  flex: 1 0 auto;
+}
+
+.b-header {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.b-about {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 15rem;
+  padding-top: 2rem;
+
+  &-photo {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 1px solid #c0c0c0;
+    overflow: hidden;
+    &-img {
+      height: 15rem;
+      position: relative;
+      left: -1.5rem;
+    }
+  }
+  &-info {
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-left: 2rem;
+    .b-general {
+      margin-bottom: 1rem;
+    }
+
+    .b-contacts {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.b-contacts {
+  .b-header {
+    text-align: left;
+  }
+  display: inline-block;
+  font-weight: bolder;
+  text-transform: uppercase;
+  vertical-align: top;
+  .fa {
+    width: 1rem;
+    text-align: center;
+  }
+  &-contact {
+    text-align: left;
+    list-style: circle;
+    font-weight: normal;
+    text-transform: none;
+  }
+}
+
+.b-general {
+  &-name {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  &-title {
+    text-align: center;
+  }
+}
+
+.b-buzzwords-cloud {
+  position: relative;
+}
+
+.b-buzzwords {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  &-buzzword {
+    font-weight: normal;
+    text-transform: none;
+  }
+}
+
+.b-experience {
+  .b-header {
+    text-align: left;
+  }
+  display: inline-block;
+}
+
+.b-places {
+  display: inline-block;
+  text-align: left;
+}
